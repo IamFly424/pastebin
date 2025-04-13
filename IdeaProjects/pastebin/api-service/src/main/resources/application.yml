@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api-service
+  rabbitmq:
+    host: rabbitmq
+    password: iamfly
+    username: iamfly
+    port: 5672
+  r2dbc:
+    url: r2dbc:postgresql://ms_postgres_urlref:5432/urlrefs_db
+    username: iamfly
+    password: iamfly
+
+
