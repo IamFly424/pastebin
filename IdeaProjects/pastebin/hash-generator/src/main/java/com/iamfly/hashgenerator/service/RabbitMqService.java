@@ -20,7 +20,7 @@ public class RabbitMqService {
     @RabbitListener(queues = "api-to-hash")
     public Mono<Void> receive(String message) {
         return hashService.getHash()
-                        .doOnNext(e -> rabbitTemplate.convertAndSend("hash-to-api", e ))
+                        .doOnNext(e -> rabbitTemplate.convertAndSend("hash-to-api", e))
                 .then();
     }
 }

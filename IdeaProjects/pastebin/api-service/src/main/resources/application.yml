@@ -6,9 +6,16 @@ spring:
     password: iamfly
     username: iamfly
     port: 5672
+    listener:
+      simple:
+        auto-startup: true
+
   r2dbc:
     url: r2dbc:postgresql://ms_postgres_urlref:5432/urlrefs_db
     username: iamfly
     password: iamfly
 
 
+
+server:
+  port: 8000

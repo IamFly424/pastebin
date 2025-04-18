@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hash-generator" />
         <module name="api-service" />
+        <module name="aws-lambda-lifecycle" />
       </profile>
     </annotationProcessing>
   </component>

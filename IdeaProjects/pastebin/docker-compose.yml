@@ -31,8 +31,6 @@ services:
     networks:
       - pastebin
 
-
-
   ms_postgres_urlref:
     container_name: ms_postgres_urlref
     image: postgres:latest
